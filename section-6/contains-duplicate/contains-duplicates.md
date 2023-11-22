@@ -61,6 +61,20 @@ From Approach #1 we know that search operations is O(n) in an unsorted array and
 
 There are many data structures commonly used as dynamic sets such as Binary Search Tree and Hash Table. The operations we need to support here are search() and insert(). For a self-balancing Binary Search Tree, search() and insert() are both O(log⁡n) time. For a Hash Table (HashSet or HashMap), search() and insert() are both O(1) on average. Therefore, by using hash table, we can achieve linear time complexity for finding the duplicate in an unsorted array.
 
+#### Code
+```go
+func containsDuplicate(arr []int) bool {
+	hashMap := make(map[int]bool)
+
+	for _, num := range arr {
+		if hashMap[num] {
+			return true
+		}
+		hashMap[num] = true
+	}
+	return false
+}
+```
 
 #### Complexity Analysis
 
