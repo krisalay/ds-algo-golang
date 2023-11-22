@@ -1,12 +1,20 @@
 
 # Move Zeroes
 
-Given a string, write a function to reverse that string.
+Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+ 
 
-For example:
+**Example 1:**
 
-Input String = "DS Algo using Golang"
-Output String = "gnaloG gnisu oglA SD"
+Input: nums = [0,1,0,3,12]
+
+Output: [1,3,12,0,0]
+
+**Example 2:**
+
+Input: nums = [0]
+
+Output: [0]
 
 
 ## Solution
