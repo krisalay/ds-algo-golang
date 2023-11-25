@@ -6,6 +6,9 @@ import (
 
 // Brute force approach
 func maxSubarrayUsingBruteForce(arr []int) int {
+	if len(arr) == 0 {
+		return 0
+	}
 	maxSubarray := math.Inf(-1)
 
 	for i := 0; i < len(arr); i++ {
@@ -20,6 +23,9 @@ func maxSubarrayUsingBruteForce(arr []int) int {
 
 // Optimised Approach
 func maxSubArray(arr []int) int {
+	if len(arr) == 0 {
+		return 0
+	}
 	maxSubArray := arr[0]
 	currentSubarray := arr[0]
 
@@ -30,10 +36,3 @@ func maxSubArray(arr []int) int {
 	}
 	return maxSubArray
 }
-
-// func main() {
-// 	result1 := maxSubarrayUsingBruteForce([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})
-// 	fmt.Println(result1)
-// 	result2 := maxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})
-// 	fmt.Println(result2)
-// }
