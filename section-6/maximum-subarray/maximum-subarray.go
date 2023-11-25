@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -32,9 +31,9 @@ func maxSubArray(arr []int) int {
 	return maxSubArray
 }
 
-func main() {
-	result1 := maxSubarrayUsingBruteForce([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})
-	fmt.Println(result1)
-	result2 := maxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})
-	fmt.Println(result2)
-}
+// func main() {
+// 	result1 := maxSubarrayUsingBruteForce([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})
+// 	fmt.Println(result1)
+// 	result2 := maxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})
+// 	fmt.Println(result2)
+// }
